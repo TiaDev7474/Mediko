@@ -1,0 +1,49 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.2rem 10% 0 10%;
+    .nav{
+         list-style: none;
+         display: flex;
+         justify-content: flex-end;
+         flex-grow: 2;
+         margin: 0;
+         .link{
+            font-size: 1.2rem;
+            margin-left: 2rem;
+            text-decoration: none;
+            color: var(---dark_text_clr);
+            cursor: pointer;
+             svg{
+                 margin-right:0.5rem ;
+             }
+            
+            
+        }
+        .active{
+            color: var(---dark_btn_clr);
+        }
+        
+    }
+   
+   
+   
+    &-end{
+         flex-grow: 1;
+         display: flex;
+         justify-content: flex-end;
+         font-size: 1.2rem;
+        
+         .link{
+            color: var(---dark_btn_clr);
+            cursor: pointer;
+         }
+         
+    }
+
+    
+
+    
+}

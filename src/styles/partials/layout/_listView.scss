@@ -1,0 +1,17 @@
+.section-list{
+    
+     .filter-btn{
+         display: inline-block;
+         border-radius: 0.2rem;
+         -webkit-border-radius: 0.2rem;
+         -moz-border-radius: 0.2rem;
+         -ms-border-radius: 0.2rem;
+         -o-border-radius: 0.2rem;
+         padding:0.5rem 2rem ;
+         background-color:var(---dark_opac_btn_clr);
+         svg{
+             color:var(---dark_btn_clr);
+         }
+       
+}
+}

@@ -1,0 +1,17 @@
+.home{
+     width: 100%;
+     display: flex;
+     &-left{
+         flex-grow: 2;
+     }
+     &-main{
+         flex-grow: 3;
+         min-width: 50rem;
+         display: flex;
+         
+       
+     }
+     &-aside{
+        width: 30rem;
+     }
+}
