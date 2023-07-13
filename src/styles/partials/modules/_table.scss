@@ -1,0 +1,84 @@
+.table{
+    width: auto;
+    // background:var(---dark_btn_clr);
+    margin-top: 2rem;
+    // color: var(---light_bg_primary);
+    &-header,&-body{
+         display: flex;
+         justify-content: space-around;
+         padding: 2rem;
+         box-shadow: 0px 2px 4px -3px var(---dark_text_clr);
+         cursor: pointer;
+         transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+         -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+         -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+         -ms-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+         -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+         &:hover{
+             transform: translateY(3%);
+             -webkit-transform: translateY(3%);
+             -moz-transform: translateY(3%);
+             -ms-transform: translateY(3%);
+             -o-transform: translateY(3%);
+}
+         
+    }
+
+    .header-item{
+        display: flex;
+        justify-content: center;
+        width: 15rem;
+        color: var(---dark_text_clr);
+        font-size: 1rem;
+        text-transform: uppercase;
+        
+    }
+    .table-data{
+        width: 15rem;
+        direction: flex;
+        text-align: center;
+      
+    }
+    .action{
+         display: flex;
+         justify-content:center;
+         &-edit{
+            color: var(---dark_btn_clr);
+            margin-right:1rem ;
+            cursor: pointer;
+            &:hover{
+                 opacity: 0.8;
+                 text-decoration: underline;
+            }
+         }
+         &-trash{
+             color: rgba(235, 88, 88, 0.887);
+             cursor: pointer;
+             &:hover{
+                opacity: 0.8;
+                text-decoration: underline;
+           }
+         }
+    }
+
+
+    .sort-icons{  
+        margin-left: 0.5rem;
+       
+    }
+    .sort-item{
+        padding: 0.2rem;
+        cursor: pointer;
+        color: var(---dark_btn_clr);
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+        -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+        -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+        -ms-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+        -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+        &:hover, &:active{
+            color: var(---dark_opac_btn_clr);
+        }
+      
+}
+    
+}

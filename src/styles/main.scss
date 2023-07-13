@@ -3,6 +3,7 @@
 :root {
     ---dark_bg_primary:#{$dark_bg_primary};
     ---dark_text_clr:#{$dark_text_clr};
+    ---light_text_clr:#{$light_text_clr};
     ---light_bg_primary:#{$light_bg_primary};
     ---light_btn_clr:#{$light_btn_clr};
     ---dark_btn_clr:#{$dark_btn_clr};
@@ -14,22 +15,25 @@
      font-family: Arial, Helvetica, sans-serif;
  }
  
- @media (prefers-color-scheme: light) {
-   :root {
-     color: #213547;
-     background-color: #ffffff;
-   }
-   a:hover {
-     color: #747bff;
-   }
-   button {
-     background-color: #f9f9f9;
-   }
- }
+//  @media (prefers-color-scheme: light) {
+//    :root {
+//      color: #213547;
+//      background-color: #ffffff;
+//    }
+//    a:hover {
+//      color: #747bff;
+//    }
+//    button {
+//      background-color: #f9f9f9;
+//    }
+//  }
 
 
 @import 'partials/layout/dashboard';
 @import 'partials/layout/home';
 @import 'partials/modules/header';
 @import 'partials/layout/listView';
+@import 'partials/modules/form';
+@import 'partials/modules/card';
+@import 'partials/modules/input';
 @import 'partials/modules/table';

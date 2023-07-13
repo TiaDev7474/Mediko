@@ -2,16 +2,21 @@
      width: 100%;
      display: flex;
      &-left{
-         flex-grow: 2;
+         flex-grow: 1;
      }
      &-main{
-         flex-grow: 3;
+         flex-grow: 2;
          min-width: 50rem;
          display: flex;
-         
-       
+         justify-content: center;
      }
      &-aside{
-        width: 30rem;
+        flex-grow: 1;
+        max-width: 30rem;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
      }
+     
 }

@@ -18,18 +18,13 @@
             cursor: pointer;
              svg{
                  margin-right:0.5rem ;
-             }
-            
-            
+             }  
         }
         .active{
             color: var(---dark_btn_clr);
         }
         
     }
-   
-   
-   
     &-end{
          flex-grow: 1;
          display: flex;

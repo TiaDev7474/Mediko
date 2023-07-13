@@ -2,6 +2,7 @@
     
      .filter-btn{
          display: inline-block;
+         cursor: pointer;
          border-radius: 0.2rem;
          -webkit-border-radius: 0.2rem;
          -moz-border-radius: 0.2rem;
@@ -9,9 +10,41 @@
          -o-border-radius: 0.2rem;
          padding:0.5rem 2rem ;
          background-color:var(---dark_opac_btn_clr);
+         color:var(---dark_btn_clr);
+         &:hover{
+            opacity: 0.8;
+         }
          svg{
-             color:var(---dark_btn_clr);
+            
+             margin-right:0.5rem ;
          }
        
-}
+      }
+      .list-add{
+          display: flex;
+          justify-content: flex-end;
+          margin: 1rem;
+          .btn{
+              background-color: var(---dark_btn_clr);
+              padding: 0.6rem 2rem;
+              border-radius: 0.2rem;
+              color: var(---light_text_clr);
+              cursor: pointer;
+              -webkit-border-radius: 0.2rem;
+              -moz-border-radius: 0.2rem;
+              -ms-border-radius: 0.2rem;
+              -o-border-radius: 0.2rem;
+              transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+              -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+              -moz-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+              -ms-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+              -o-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 400ms;
+              &:hover{
+                  opacity: 0.8;
+              }
+              svg{
+                 margin-right: 0.5rem;
+              }
+           }
+      }
 }

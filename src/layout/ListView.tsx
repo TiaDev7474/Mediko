@@ -3,8 +3,8 @@ import  { useEffect, useState } from 'react'
 import {collection, getDocs } from 'firebase/firestore';
 import  {database} from '../services/firebase';
 import TableView from '../components/TableView';
-import { faSliders } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import FilterBtn from '../components/FilterBtn';
+import AddBtn from '../components/AddBtn';
 
 
 export type IDoctor = {
@@ -23,16 +23,17 @@ const ListView = () => {
               setDoctorList(data.docs.map((doc) => ({...doc.data(),id:doc.id} as IDoctor))) 
          };
         void getMedicinDocs();
-    },[])
+    },[doctorList])
   return (
     <div className='section-list'>
         <div className='section-header'>
             <h2 className='title'>Doctors</h2>
         </div>
         <div className='filter'>
-             <span className='filter-btn'>
-                    <FontAwesomeIcon icon={faSliders} />
-             </span>
+             <FilterBtn />
+        </div>
+        <div className='list-add'>
+            <AddBtn />
         </div>
           <TableView doctorList={doctorList} />
     </div>
