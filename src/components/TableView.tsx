@@ -15,6 +15,9 @@ const tableHeader =[
     title: 'Daily rate'
   }
   , {
+    title: 'Prestation'
+  }
+  , {
     title: 'Actions'
   }
 ]
@@ -40,8 +43,9 @@ const TableView = ({ doctorList }: DoctorListProps) => {
                     doctorList.map(item => (
                       <tbody className='table-body'>
                           <td className='table-data'>{item.firstname} {item.lastname}</td>
-                          <td className='table-data'>{item.work_days}</td>
-                          <td className='table-data'>{item.daily_rate}</td>
+                          <td className='table-data'>{item.work_days} days</td>
+                          <td className='table-data'>{item.daily_rate} Ar</td>
+                          <td className='table-data'>{item.daily_rate * item.work_days} Ar</td>
                           <TableAcionBtn id={item.id} handleDelete={handleDelete}/>
                       </tbody>
                     ))

@@ -1,13 +1,13 @@
-import { faArrowLeftLong, faCamera } from "@fortawesome/free-solid-svg-icons"
+import { faArrowLeftLong } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import InputForm from "./InputForm"
-import react from '../assets/react.svg'
+
 import { useNavigate } from "react-router-dom"
 import {  useFormik } from "formik"
 import * as Yup from 'yup'
 import { addDoc, collection } from "firebase/firestore"
 import { database } from "../services/firebase"
-import { IDoctor } from "../layout/ListView"
+
 
 
  export interface Values {
@@ -69,9 +69,9 @@ export const ActionForm = () => {
           <h2 className="title">ADD DOCTOR</h2>
       </div>
       <form className="form" onSubmit={formik.handleSubmit}>
-          <div className="aside">
+          {/* <div className="aside">
                 <label className="file-input">
-                      <img src={react}/>
+                      <img src='https://placehold.co/600x400'/>
                       <input type="file" style={{display:'none'}} />
                       <span className="camera">
                          <FontAwesomeIcon icon={faCamera}/>
@@ -79,7 +79,7 @@ export const ActionForm = () => {
                 </label> 
                 
 
-          </div>
+          </div> */}
           <div>
                <InputForm 
                     type="text" 

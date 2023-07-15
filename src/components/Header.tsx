@@ -5,6 +5,9 @@ import { NavLink } from 'react-router-dom';
 const Header = () => {
   return (
     <div className='header'>
+        <div className='header-logo'>
+             <h3 className='header-letter'>.Mediko</h3>
+        </div>
         <ul className='nav'>
              <li className='nav-item'>
                  <NavLink  to='/' className='link'>

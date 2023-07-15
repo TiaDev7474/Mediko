@@ -28,13 +28,11 @@ const HomeLayout = () => {
           let highestEarningsDoctor: IDoctor | null = null;
           console.log(querySnapshot.docs)
           querySnapshot.docs.map(doc => {
-             
               const doctor = doc.data() as IDoctor
               const earnings = doctor.daily_rate * doctor.work_days;
               total += earnings
               if(earnings < lowestEarnings){
                   lowestEarnings = earnings;
-
               }
               if (earnings > highestEarnings) {
                 highestEarnings = earnings;
